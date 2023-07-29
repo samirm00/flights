@@ -64,11 +64,12 @@ const data = {
 };
 
 const container = document.getElementById('container');
+
 const loadHandler = () => {
     const sortedFlights = data.flights.sort(
         (a, b) =>
             new Date(a.departureDate).getTime() -
-            new Date(b.departureDate).getTime()
+            new Date(b.departureDate).getTime(),
     );
 
     sortedFlights.forEach((flightData) => {
@@ -117,7 +118,7 @@ const loadHandler = () => {
             origin,
             arrivalDate,
             destination,
-            stops
+            stops,
         );
 
         container.append(flight);
