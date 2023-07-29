@@ -1,4 +1,4 @@
-# Image gallery
+# Flights
 
 > A simple website allows the user to see info about flights.
 
