@@ -1,8 +1,8 @@
-import sortedFlights from './sortFlights.js';
+import sortFlights from './sortFlights.js';
 
 describe('sort flights testing', () => {
     test('Basic testing', () => {
-        const actual = sortedFlights([
+        const actual = sortFlights([
             {
                 departureDate: '2023-08-15 13:45:00',
             },

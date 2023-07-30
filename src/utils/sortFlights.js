@@ -1,4 +1,4 @@
-const sortedFlights = (flights) => {
+const sortFlights = (flights) => {
     const sortedFlights = flights.sort(
         (a, b) =>
             new Date(a.departureDate).getTime() -
@@ -8,4 +8,4 @@ const sortedFlights = (flights) => {
     return sortedFlights;
 };
 
-export default sortedFlights;
+export default sortFlights;
