@@ -16,13 +16,11 @@ describe('Test flight component', () => {
         stops: 0,
     });
 
-    test('Basic testing 1', () => {
+    test('expect nodeName -> DIV', () => {
         expect(actual.nodeName).toEqual('DIV');
     });
-    test('Basic testing 2', () => {
-        expect(actual.nodeName).toEqual('DIV');
-    });
-    test('Basic testing 3', () => {
+
+    test('expect children count -> 7', () => {
         expect(actual.childElementCount).toEqual(7);
     });
 });
